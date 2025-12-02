@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "query": "What is parametric memory, and what are its applications in the field of artificial intelligence?",
+      "retrieved":"Parametric memory refers to encoding knowledge into a model's parameters, enabling the model to directly extract information from its parameters during inference without relying on an external database."
+    },
+    {
+      "id": 2,
+      "query": "What are the main differences between parametric memory and non-parametric memory, and what are their respective advantages and disadvantages?",
+      "retrieved": "Parametric memory stores knowledge in model parameters, while non-parametric memory relies on external databases (such as vector databases) for knowledge retrieval."
+    },
+    {
+      "id": 3,
+      "query": "How to train models to enhance their parametric memory capabilities, and what are the key technologies?",
+      "retrieved":"Training technologies to enhance parametric memory include: increasing model parameter count, using longer training sequences, introducing knowledge distillation, and contrastive learning."
+    },
+    {
+      "id": 4,
+      "query": "What are the specific application cases of parametric memory in Natural Language Processing (NLP)?",
+      "retrieved": "In question-answering systems, parametric memory enables models to directly answer factual questions (e.g., 'In which year was Einstein born?') without retrieving external knowledge."
+    },
+    {
+      "id": 5,
+      "query": "What are the future development trends of parametric memory technology, and what challenges may it face?",
+      "retrieved":"Future development trends include: more efficient parameter utilization (such as sparsification technology), hybrid models combining parametric and non-parametric memory, and more interpretable memory mechanisms."
+    }
+  ]
