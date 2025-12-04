@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<p><strong>Weave moments into an everlasting cosmic memory. Enabling AI to reason, adapt, and recall across modalities</p>
+<p><strong>Weave moments into an everlasting cosmic memory. Enabling AI to reason, adapt, and recall across modalities</strong></p>
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-0084FF?style=flat-square&logo=python&logoColor=white" />
