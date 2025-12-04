@@ -23,7 +23,7 @@
 
 **MemVerse** is an open-source framework designed to provide continuous, multimodal memory for AI agents. It organizes and retrieves information from text, images, and other sensory inputs, enabling agents to remember past interactions, understand context, and adapt dynamically. By structuring memories as hierarchical knowledge graphs and combining them with fast parametric recall, MemVerse empowers AI to reason, interact, and provide coherent, personalized experiences across extended conversations.
 
-> 📄 **Paper Coming Soon** - Our technical paper is in preparation. Stay tuned!
+> 📄 **Paper Available on arXiv** — [https://arxiv.org/abs/2512.03627](https://arxiv.org/abs/2512.03627)
 
 On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accuracy of **84.48% on ScienceQA** and **90.40% on MSR-VTT**, demonstrating enhanced multimodal reasoning, adaptive learning, and coherent performance across extended interactions.
 
@@ -160,5 +160,13 @@ curl -X POST "http://127.0.0.1:8000/query" \
 If you use MemVerse in your research, please cite our paper (coming soon):
 
 ```
-Coming soon
+@misc{Liu_2025_MemVerse,
+      title={MemVerse: Multimodal Memory for Lifelong Learning Agents}, 
+      author={Junming Liu and Yifei Sun and Weihua Cheng and Haodong Lei and Yirong Chen and Licheng Wen and Xuemeng Yang and Daocheng Fu and Pinlong Cai and Nianchen Deng and Yi Yu and Shuyue Hu and Botian Shi and Ding Wang},
+      year={2025},
+      eprint={2512.03627},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2512.03627}, 
+}
 ```
