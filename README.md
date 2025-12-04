@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<p><strong>Weave moments into an everlasting cosmic memory. Enabling AI to reason, adapt, and recall across modalities</strong></p>
+<p><strong>Weave moments into an everlasting cosmic memory: Enabling AI to reason, adapt, and recall across modalities</strong></p>
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-0084FF?style=flat-square&logo=python&logoColor=white" />
@@ -96,7 +96,7 @@ Together, these components form a cognitive loop that continuously updates, cons
 
 <!-- - **A GPU with at least 12GB VRAM** (for paramatric memory) -->
 - Python 3.10+
-- **At least 4GB of available RAM** (for memory storage)
+- At least 4GB of available RAM (for memory storage)
 - Access to the MemVerse API
 
 ### Installation
