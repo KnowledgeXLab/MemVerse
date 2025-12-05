@@ -163,7 +163,7 @@ Ecosystem & Extensions
 
 | | |
 | :---: | :---: |
-| <p align="center"> <a href="https://github.com/Wings-Of-Disaster/VaLiK"><span style="font-size: 30px;">&#128064;</span></a><br> <a href="https://github.com/Wings-Of-Disaster/VaLiK">**VaLiK**</a><br> <span style="font-size: smaller; color: gray;">Visual-Language Knowledge</span> </p> | <p align="center"> <a href="https://github.com/MintyCo0kie/MGA4OSWorld"><span style="font-size: 30px;">&#127760;</span></a><br> <a href="https://github.com/MintyCo0kie/MGA4OSWorld">**MGA4OSWorld**</a><br> <span style="font-size: smaller; color: gray;">Multi-Modal Goal-driven Agent</span> </p> |
+| <p align="center"> <a href="https://github.com/Wings-Of-Disaster/VaLiK"><span style="font-size: 30px;">&#128064;</span></a><br> <a href="https://github.com/Wings-Of-Disaster/VaLiK">**VaLiK**</a><br> <span style="font-size: smaller; color: gray;">Aligning Vision to Language</span> </p> | <p align="center"> <a href="https://github.com/MintyCo0kie/MGA4OSWorld"><span style="font-size: 30px;">&#127760;</span></a><br> <a href="https://github.com/MintyCo0kie/MGA4OSWorld">**MGA4OSWorld**</a><br> <span style="font-size: smaller; color: gray;">Memory-Driven GUI Agent</span> </p> |
 
 </div>
 
