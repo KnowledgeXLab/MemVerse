@@ -154,6 +154,20 @@ curl -X POST "http://127.0.0.1:8000/query" \
 
 **MSR-VTT:** By leveraging a memory-based knowledge graph and semantic associations between captions, MemVerse achieves **90.40% R@1** in text-to-video retrieval and **89.20% R@1** in video-to-text retrieval. This demonstrates that structured memory greatly enhances multimodal semantic matching, enabling lightweight models to retrieve relevant information efficiently while capturing rich reasoning from large pretrained models.
 
+
+## Related Projects
+ 
+Ecosystem & Extensions
+
+<div align="center">
+
+| | |
+| :---: | :---: |
+| <p align="center"> <a href="https://github.com/Wings-Of-Disaster/VaLiK"><span style="font-size: 30px;">&#128064;</span></a><br> <a href="https://github.com/Wings-Of-Disaster/VaLiK">**VaLiK**</a><br> <span style="font-size: smaller; color: gray;">Visual-Language Knowledge</span> </p> | <p align="center"> <a href="https://github.com/MintyCo0kie/MGA4OSWorld"><span style="font-size: 30px;">&#127760;</span></a><br> <a href="https://github.com/MintyCo0kie/MGA4OSWorld">**MGA4OSWorld**</a><br> <span style="font-size: smaller; color: gray;">Multi-Modal Goal-driven Agent</span> </p> |
+
+</div>
+
+
 <a id="citation"></a>
 ## 📖 Citation
 
