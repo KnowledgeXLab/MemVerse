@@ -10,6 +10,9 @@
    <a href="https://github.com/Wings-Of-Disaster/MemVerse/releases">
     <img alt="Release" src="https://img.shields.io/badge/release-v1.0.0-4A90E2?style=flat-square" />
   </a>
+  <a href="https://arxiv.org/abs/2512.03627">
+      <img alt="Build" src="http://img.shields.io/badge/cs.CV-arXiv%3A2503.12972-B31B1B.svg">
+  </a>
 </p>
 
 </div>
