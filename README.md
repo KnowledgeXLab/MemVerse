@@ -29,9 +29,12 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 
 <p align="center">
   <video width="800" controls>
-    <source src="demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="https://raw.githubusercontent.com/KnowledgeXLab/MemVerse/main/demo.mp4" type="video/mp4">
   </video>
+</p>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/KnowledgeXLab/MemVerse/main/demo.mp4">点击下载或查看演示视频</a>
 </p>
 
 ---
