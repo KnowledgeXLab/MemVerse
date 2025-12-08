@@ -28,7 +28,10 @@
 On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accuracy of **84.48% on ScienceQA** and **90.40% on MSR-VTT**, demonstrating enhanced multimodal reasoning, adaptive learning, and coherent performance across extended interactions.
 
 <p align="center">
-  <img src="assets/novelty.jpg" alt="Overview" />
+  <video width="800" controls>
+    <source src="demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 ---
