@@ -160,7 +160,7 @@ def process_memory(json_data: list, check_duplicate: bool = False):
             for m in memory_data:
                 f.write(json.dumps(m, ensure_ascii=False) + "\n")
 
-        print(f"✅ {prompt_file} -> {output_file} Completed for {len(new_entries)} new entries!")
+        print(f"✅ {prompt_file} -> {output_file} Completed for {len(json_data)} entries!")
 
 
 if __name__ == "__main__":
@@ -168,6 +168,7 @@ if __name__ == "__main__":
     if not input_file.lower().endswith(".json"):
         raise ValueError("Only JSON files are supported as input.")
 
+    data = []
     with open(input_file, "r", encoding="utf-8") as f:
         for line_num, line in enumerate(f, 1):
             line = line.strip()
