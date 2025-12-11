@@ -9,7 +9,6 @@
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-Latest-26A69A?style=flat-square&logo=fastapi&logoColor=white" />
    <a href="https://github.com/Wings-Of-Disaster/MemVerse/releases">
     <img alt="Release" src="https://img.shields.io/badge/release-v1.0.0-4A90E2?style=flat-square" />
-  </a>
   <a href="https://arxiv.org/abs/2512.03627">
       <img alt="Build" src="http://img.shields.io/badge/cs.AI-arXiv%3A2512.03627-B31B1B.svg">
   </a>
