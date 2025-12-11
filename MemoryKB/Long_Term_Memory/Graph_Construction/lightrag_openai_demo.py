@@ -1,19 +1,24 @@
 import os
+import sys
 import asyncio
 import logging
 import logging.config
 import json
-from MemoryKB.Long_Term_Memory.Graph_Construction.lightrag import LightRAG, QueryParam
-from MemoryKB.Long_Term_Memory.Graph_Construction.lightrag.llm.openai import gpt_4o_mini_complete, openai_embed
-from MemoryKB.Long_Term_Memory.Graph_Construction.lightrag.kg.shared_storage import initialize_pipeline_status
-from MemoryKB.Long_Term_Memory.Graph_Construction.lightrag.utils import logger, set_verbose_debug
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
+
+from lightrag import LightRAG, QueryParam
+from lightrag.llm.openai import gpt_4o_mini_complete, openai_embed
+from lightrag.kg.shared_storage import initialize_pipeline_status
+from lightrag.utils import logger, set_verbose_debug
 
 BASE_DIR = os.path.join("MemoryKB", "Long_Term_Memory", "Graph_Construction", "MMKG")
 CORE_DIR = os.path.join(BASE_DIR, "core")
 EPISODIC_DIR = os.path.join(BASE_DIR, "episodic")
 SEMANTIC_DIR = os.path.join(BASE_DIR, "semantic")
 
-MEMORY_JSON_DIR = os.path.join("..", "memory_chunks")
+MEMORY_JSON_DIR = os.path.join("MemoryKB", "Long_Term_Memory", "memory_chunks")
 CORE_JSON = os.path.join(MEMORY_JSON_DIR, "core_memory.json")
 EPISODIC_JSON = os.path.join(MEMORY_JSON_DIR, "episodic_memory.json")
 SEMANTIC_JSON = os.path.join(MEMORY_JSON_DIR, "semantic_memory.json")
@@ -87,12 +92,18 @@ async def insert_chunks_from_json(rag: LightRAG, json_path: str):
         print(f"File not found: {json_path}")
         return
     with open(json_path, "r", encoding="utf-8") as f:
-        chunks = json.load(f)
-        for chunk in chunks:
-            text = chunk.get("output_text")
-            if text:
-                await rag.ainsert(text)
-
+        for line_num, line in enumerate(f, 1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                chunk = json.loads(line)
+                text = chunk.get("output_text")
+                if text:
+                    await rag.ainsert(text)
+            except json.JSONDecodeError as e:
+                print(f"Warning: Invalid JSON format at line {line_num}, skipping this line: {e}")
+                continue
 
 async def main():
     # Check if OPENAI_API_KEY environment variable exists

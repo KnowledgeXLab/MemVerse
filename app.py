@@ -1,5 +1,6 @@
 # app.py
 from fastapi import FastAPI, UploadFile, Form
+
 from orchestrator import (
     initialize_rag,
     handle_insert,
@@ -11,7 +12,7 @@ app = FastAPI()
 @app.on_event("startup")
 async def startup_event():
     await initialize_rag()
-
+    
 @app.post("/insert")
 async def insert(query: str = Form(...), video: UploadFile = None, audio: UploadFile = None, image: UploadFile = None):
     entry = await handle_insert(query, video, audio, image)

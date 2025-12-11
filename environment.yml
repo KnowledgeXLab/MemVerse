@@ -90,7 +90,7 @@ dependencies:
       - chardet==3.0.4
       - charset-normalizer==3.4.3
       - click==8.2.1
-      - clip==1.0
+      # - clip==1.0
       - clip-interrogator==0.6.0
       - colorama==0.4.6
       - composio==0.8.0

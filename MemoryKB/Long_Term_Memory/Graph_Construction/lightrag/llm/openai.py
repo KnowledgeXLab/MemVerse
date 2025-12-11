@@ -25,13 +25,13 @@ from tenacity import (
     wait_exponential,
     retry_if_exception_type,
 )
-from lightrag.utils import (
+from ..utils import (
     wrap_embedding_func_with_attrs,
     safe_unicode_decode,
     logger,
 )
-from lightrag.types import GPTKeywordExtractionFormat
-from lightrag.api import __api_version__
+from ..types import GPTKeywordExtractionFormat
+from ..api import __api_version__
 
 import numpy as np
 import base64

@@ -31,24 +31,24 @@ def cosine_sim(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 
-def load_existing_memory(file_path: str):
-    if not os.path.exists(file_path):
-        return []
+# def load_existing_memory(file_path: str):
+#     if not os.path.exists(file_path):
+#         return []
 
-    memory_data = []
-    with open(file_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                item = json.loads(line)
-                if "embedding" not in item:
-                    item["embedding"] = get_embedding(item["input_text"]).tolist()
-                memory_data.append(item)
-            except json.JSONDecodeError:
-                continue
-    return memory_data
+#     memory_data = []
+#     with open(file_path, "r", encoding="utf-8") as f:
+#         for line in f:
+#             line = line.strip()
+#             if not line:
+#                 continue
+#             try:
+#                 item = json.loads(line)
+#                 if "embedding" not in item:
+#                     item["embedding"] = get_embedding(item["input_text"]).tolist()
+#                 memory_data.append(item)
+#             except json.JSONDecodeError:
+#                 continue
+#     return memory_data
 
 
 def process_memory(json_data: list, check_duplicate: bool = False):
@@ -64,16 +64,9 @@ def process_memory(json_data: list, check_duplicate: bool = False):
         with open(prompt_file, "r", encoding="utf-8") as f:
             prompt = f.read().strip()
 
-        memory_data = load_existing_memory(output_file)
-        existing_ids = {m["id"] for m in memory_data}
+        memory_data = []
 
-        new_entries = [entry for entry in json_data if entry["id"] not in existing_ids]
-
-        if not new_entries:
-            print(f"ℹ️ No new entries to process for {prompt_file}.")
-            continue
-
-        for entry in new_entries:
+        for entry in json_data:
             input_text_parts = [f"Query: {entry['query']}"]
             if entry.get("videocaption"):
                 input_text_parts.append(f"Video: {entry['videocaption']}")
@@ -163,7 +156,7 @@ def process_memory(json_data: list, check_duplicate: bool = False):
             }
 
             memory_data.append(memory_entry)
-        with open(output_file, "w", encoding="utf-8") as f:
+        with open(output_file, "a", encoding="utf-8") as f:
             for m in memory_data:
                 f.write(json.dumps(m, ensure_ascii=False) + "\n")
 
@@ -176,7 +169,16 @@ if __name__ == "__main__":
         raise ValueError("Only JSON files are supported as input.")
 
     with open(input_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        for line_num, line in enumerate(f, 1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                item = json.loads(line)
+                data.append(item)
+            except json.JSONDecodeError as e:
+                print(f"Warning: Invalid JSON format at line {line_num}, skipping this line: {e}")
+                continue
 
     # check_duplicate defaults to False; set True to check redundancy via GPT
     process_memory(data, check_duplicate=True)

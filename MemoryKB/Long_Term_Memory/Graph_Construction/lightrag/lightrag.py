@@ -1,7 +1,3 @@
-# This version of LightRAG supports using special symbols
-# ↩↩✦✦✦✦↩↩
-# as chunk delimiters, which allows proper linking to the corresponding images.
-
 from __future__ import annotations
 
 import traceback
@@ -861,7 +857,7 @@ class LightRAG:
     async def ainsert(
         self,
         input: str | list[str],
-        split_by_character: str | None = "↩↩✦✦✦✦↩↩",
+        split_by_character: str | None = None,
         split_by_character_only: bool = False,
         ids: str | list[str] | None = None,
         file_paths: str | list[str] | None = None,
