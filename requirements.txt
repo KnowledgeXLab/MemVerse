@@ -8,3 +8,7 @@ requests
 json_repair
 pipmaster
 nano_vectordb
+tiktoken
+networkx
+dotenv
+tenacity
