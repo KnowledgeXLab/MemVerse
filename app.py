@@ -16,8 +16,11 @@ async def startup_event():
         
 @app.post("/insert")
 async def insert(query: str = Form(...), video: UploadFile = None, audio: UploadFile = None, image: UploadFile = None):
-    entry = await handle_insert(query, video, audio, image)
-    return {"status": "ok", "entry": entry}
+    try:
+        entry = await handle_insert(query, video, audio, image)
+        return {"status": "ok", "entry": entry}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
 
 @app.post("/query")
 async def query_api(query: str = Form(...), mode: str = Form("hybrid"), use_pm: bool = Form(False)):
