@@ -217,22 +217,23 @@ async def check_pm_relevance(query: str, pm_memory: str) -> bool:
 
 async def rag_retrieve(query: str, mode: str = "hybrid"):
     try:
+        
         return await mem_core.aquery(query, param=QueryParam(mode=mode))
     except Exception as e:
         return f"⚠️ RAG retrieval failed: {e}"
 
 async def generate_final_answer(query: str, memory: str):
     prompt = f"""
-You are the user's memory assistant.
+        You are the user's memory assistant.
 
-User query:
-{query}
+        User query:
+        {query}
 
-Relevant memory:
-{memory}
+        Relevant memory:
+        {memory}
 
-If memory is insufficient, answer normally.
-"""
+        If memory is insufficient, answer normally.
+        """
     try:
         completion = await client.chat.completions.create(
             model="gpt-4o-mini",
@@ -274,7 +275,10 @@ async def handle_query(query: str, mode: str, use_pm: bool):
 
     rag_memory = None
     if not pm_relevant:
-        rag_memory = await rag_retrieve(query, mode=mode)
+        try:
+            rag_memory = await rag_retrieve(query, mode=mode)
+        except Exception as e:
+            return f"⚠️ RAG failed: {e}"
 
     memory_text = ""
     if pm_relevant:
