@@ -52,6 +52,23 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="100%" style="border: none;">
+
+<strong>[2025-12-19] 🐳 MemVerse Docker v0.1.0 Released!</strong>
+
+- 📦 <strong>Dockerized Deployment</strong>: One-command startup for FastAPI + MCP server  
+- 🔌 <strong>Plug-and-Play</strong>: No local Python or virtual environment required  
+- 🌍 <strong>Cross-Platform</strong>: Tested on Linux & macOS (Docker Desktop)  
+- 🔑 <strong>Env-Driven Config</strong>: Seamless integration with custom OpenAI-compatible APIs  
+- 🤖 <strong>MCP Ready</strong>: Native support for agent frameworks via MCP protocol  
+
+</td>
+</tr>
+</table>
+
+
 ---
 
 ## 🎯 Why MemVerse  
