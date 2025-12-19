@@ -141,13 +141,79 @@ curl -X POST "http://127.0.0.1:8000/insert" \
 curl -X POST "http://127.0.0.1:8000/query" \
   -F "query=Hello MemVerse!" \
 ```
+## 🐳 Run with Docker (Recommended)
 
+For ease of deployment and reproducibility, MemVerse provides a pre-built Docker image that bundles both the **FastAPI service** and the **MCP server**.
+
+1. **Pull the Docker Image**
+
+```bash
+docker pull yifeisunecust/memverse:v0.1.0
+```
+Make sure Docker is installed on your system.
+
+2. **Start MemVerse Services**
+
+Run the container with required environment variables:
+#### Terminal 1 — Start Docker Container
+```bash
+docker run -d \
+  --name memverse \
+  -p 8000:8000 \
+  -p 5250:5250 \
+  -e OPENAI_API_KEY="YOUR_OPENAI_API_KEY" \
+  -e OPENAI_API_BASE="http://35.220.164.252:3888/v1" \
+  yifeisunecust/memverse:v0.1.0
+```
+This command will start:
+
+FastAPI server → http://localhost:8000
+
+MCP server → http://localhost:5250
+
+3. **Use MCP Server**
+
+Terminal 2 — Run MCP Client, on your host machine (outside Docker):
+```bash
+python mcp_client.py # demo
+```
+
+4. **Use Fastapi**
+
+Terminal 3 — Try Fastapi, on your host machine (outside Docker):
+
+```bash
+curl -X POST "http://127.0.0.1:8000/query" \
+  -F "query=Hello MemVerse!" \
+```
+
+If you are using a Linux system, you can use
+```bash
+sudo apt install -y qemu-user-static
+```
+Pull the arm64 architecture image
+
+```bash
+docker pull --platform linux/arm64 yifeisunecust/memverse:v0.1.0
+```
+Start servers
+```bash
+docker run -d \
+  --name memverse \
+  -p 8000:8000 \
+  -p 5250:5250 \
+  -e OPENAI_API_KEY="YOUR_OPENAI_API_KEY" \
+  -e OPENAI_API_BASE="http://35.220.164.252:3888/v1" \
+  --platform linux/arm64 yifeisunecust/memverse:v0.1.0
+```
+The rest is the same as above.
 <a id="results"></a>
 ### 📊 Results
 
 <p align="center">
   <img src="assets/scienceqa.png" alt="Overview" />
 </p>
+
 
 **ScienceQA:** MemVerse-enhanced GPT-4o-mini achieves an accuracy of **84.48%**, showing that parametric memory enables fast, context-aware reasoning even when questions have limited sequential dependencies. The model effectively integrates long-term knowledge for subject-specific reasoning in natural science, social science, and language tasks.
 
