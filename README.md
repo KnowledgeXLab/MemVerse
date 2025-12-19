@@ -271,4 +271,3 @@ If you use MemVerse in your research, please cite our paper (coming soon):
 }
 ```
 
-<meta name="google-site-verification" content="ZkLmcO-t9YUXmEF_DPSy-S15C8Y5njb9QylcEcvdoLY" />
