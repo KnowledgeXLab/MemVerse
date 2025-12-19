@@ -56,7 +56,7 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 <tr>
 <td width="100%" style="border: none;">
 
-<strong>[2025-12-19] 🐳 MemVerse Docker v0.1.0 Released!</strong>
+<strong>[2025-12-19] 🐳 MemVerse Docker v1.1.0 Released!</strong>
 
 - 📦 <strong>Dockerized Deployment</strong>: One-command startup for FastAPI + MCP server  
 - 🔌 <strong>Plug-and-Play</strong>: No local Python or virtual environment required  
@@ -165,7 +165,7 @@ For ease of deployment and reproducibility, MemVerse provides a pre-built Docker
 1. **Pull the Docker Image**
 
 ```bash
-docker pull yifeisunecust/memverse:v0.1.0
+docker pull yifeisunecust/memverse:v1.1.0
 ```
 Make sure Docker is installed on your system.
 
@@ -180,7 +180,7 @@ docker run -d \
   -p 5250:5250 \
   -e OPENAI_API_KEY="YOUR_OPENAI_API_KEY" \
   -e OPENAI_API_BASE="http://35.220.164.252:3888/v1" \
-  yifeisunecust/memverse:v0.1.0
+  yifeisunecust/memverse:v1.1.0
 ```
 This command will start:
 
@@ -211,7 +211,7 @@ sudo apt install -y qemu-user-static
 Pull the arm64 architecture image
 
 ```bash
-docker pull --platform linux/arm64 yifeisunecust/memverse:v0.1.0
+docker pull --platform linux/arm64 yifeisunecust/memverse:v1.1.0
 ```
 Start servers
 ```bash
@@ -221,7 +221,7 @@ docker run -d \
   -p 5250:5250 \
   -e OPENAI_API_KEY="YOUR_OPENAI_API_KEY" \
   -e OPENAI_API_BASE="http://35.220.164.252:3888/v1" \
-  --platform linux/arm64 yifeisunecust/memverse:v0.1.0
+  --platform linux/arm64 yifeisunecust/memverse:v1.1.0
 ```
 The rest is the same as above.
 <a id="results"></a>
