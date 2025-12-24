@@ -42,20 +42,6 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 <tr>
 <td width="100%" style="border: none;">
 
-**[2025-12-01] 🎉 🎉 🎉 MemVerse v1.0.0 Released!**
-
-- ✨ **Stable Version**: The universal AI memory system is now officially open source  
-- 📚 **Comprehensive Docs**: Quick start guides and full API reference included  
-- 🖥️ **Interactive Demos**: Explore MemVerse with easy-to-use demonstration tools  
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="100%" style="border: none;">
-
 <strong>[2025-12-19] 🐳 MemVerse Docker v1.1.0 Released!</strong>
 
 - 📦 <strong>Dockerized Deployment</strong>: One-command startup for FastAPI + MCP server  
@@ -67,6 +53,21 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 </td>
 </tr>
 </table>
+
+<table>
+<tr>
+<td width="100%" style="border: none;">
+
+**[2025-12-01] 🎉 🎉 🎉 MemVerse v1.0.0 Released!**
+
+- ✨ **Stable Version**: The universal AI memory system is now officially open source  
+- 📚 **Comprehensive Docs**: Quick start guides and full API reference included  
+- 🖥️ **Interactive Demos**: Explore MemVerse with easy-to-use demonstration tools  
+
+</td>
+</tr>
+</table>
+
 
 
 ---
