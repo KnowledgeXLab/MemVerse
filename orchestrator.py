@@ -277,6 +277,8 @@ async def handle_query(query: str, mode: str, use_pm: bool):
     if not pm_relevant:
         try:
             rag_memory = await rag_retrieve(query, mode=mode)
+            with open("rag_memory.txt", "a", encoding="utf-8") as f:
+                f.write(str(rag_memory))
         except Exception as e:
             return f"⚠️ RAG failed: {e}"
 
@@ -287,6 +289,7 @@ async def handle_query(query: str, mode: str, use_pm: bool):
         memory_text += f"[Long-term Memory]\n{rag_memory}\n"
 
     final_answer = await generate_final_answer(query, memory_text)
+
     return {
         "query": query,
         "mode": mode,
