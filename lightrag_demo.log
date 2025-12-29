@@ -1,0 +1,89 @@
+2025-12-29 15:29:10,656 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/core/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:10,658 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:29:10,659 - lightrag - INFO - [_] Process 230463 KV load full_docs with 0 records
+2025-12-29 15:29:10,660 - lightrag - INFO - [_] Process 230463 KV load text_chunks with 0 records
+2025-12-29 15:29:10,661 - lightrag - INFO - [_] Process 230463 KV load full_entities with 0 records
+2025-12-29 15:29:10,662 - lightrag - INFO - [_] Process 230463 KV load full_relations with 0 records
+2025-12-29 15:29:10,664 - lightrag - INFO - [_] Process 230463 KV load llm_response_cache with 0 records
+2025-12-29 15:29:10,665 - lightrag - INFO - [_] Process 230463 doc status load doc_status with 0 records
+2025-12-29 15:29:10,666 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/episodic/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:10,668 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:29:10,670 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/semantic/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:10,672 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:29:57,074 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/core/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:57,077 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:29:57,078 - lightrag - INFO - [_] Process 233694 KV load full_docs with 0 records
+2025-12-29 15:29:57,079 - lightrag - INFO - [_] Process 233694 KV load text_chunks with 0 records
+2025-12-29 15:29:57,080 - lightrag - INFO - [_] Process 233694 KV load full_entities with 0 records
+2025-12-29 15:29:57,082 - lightrag - INFO - [_] Process 233694 KV load full_relations with 0 records
+2025-12-29 15:29:57,083 - lightrag - INFO - [_] Process 233694 KV load llm_response_cache with 0 records
+2025-12-29 15:29:57,084 - lightrag - INFO - [_] Process 233694 doc status load doc_status with 0 records
+2025-12-29 15:29:57,086 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/episodic/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:57,087 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:29:57,089 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/semantic/graph_chunk_entity_relation.graphml
+2025-12-29 15:29:57,091 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:30:04,977 - lightrag - INFO - limit_async: 4 new workers initialized
+2025-12-29 15:30:07,180 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:995b8a000f046b2829c2ebfd96574068
+2025-12-29 15:30:07,182 - lightrag - INFO - Process 233694 building query context...
+2025-12-29 15:30:07,183 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:30:07,184 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-12-29 15:30:07,947 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:30:08,559 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:30:08,561 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:30:08,562 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks
+2025-12-29 15:30:58,101 - lightrag - INFO - Process 233694 building query context...
+2025-12-29 15:30:58,102 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:30:58,597 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:30:59,579 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:30:59,580 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:30:59,582 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks
+2025-12-29 15:31:18,596 - lightrag - INFO - Process 233694 building query context...
+2025-12-29 15:31:18,598 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:31:19,034 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:31:19,504 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:31:19,506 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:31:19,507 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks
+2025-12-29 15:32:00,941 - lightrag - INFO - Process 233694 building query context...
+2025-12-29 15:32:00,943 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:32:01,514 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:32:01,990 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:32:01,992 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:32:01,993 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks
+2025-12-29 15:32:45,901 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/core/graph_chunk_entity_relation.graphml
+2025-12-29 15:32:45,903 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:32:45,904 - lightrag - INFO - [_] Process 239235 KV load full_docs with 0 records
+2025-12-29 15:32:45,906 - lightrag - INFO - [_] Process 239235 KV load text_chunks with 0 records
+2025-12-29 15:32:45,907 - lightrag - INFO - [_] Process 239235 KV load full_entities with 0 records
+2025-12-29 15:32:45,908 - lightrag - INFO - [_] Process 239235 KV load full_relations with 0 records
+2025-12-29 15:32:45,912 - lightrag - INFO - [_] Process 239235 KV load llm_response_cache with 1 records
+2025-12-29 15:32:45,913 - lightrag - INFO - [_] Process 239235 doc status load doc_status with 0 records
+2025-12-29 15:32:45,915 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/episodic/graph_chunk_entity_relation.graphml
+2025-12-29 15:32:45,917 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:32:45,919 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/semantic/graph_chunk_entity_relation.graphml
+2025-12-29 15:32:45,921 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:32:49,337 - lightrag - INFO - Process 239235 building query context...
+2025-12-29 15:32:49,339 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:32:49,340 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-12-29 15:32:50,747 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:32:51,814 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:32:51,816 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:32:51,817 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks
+2025-12-29 15:33:32,259 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/core/graph_chunk_entity_relation.graphml
+2025-12-29 15:33:32,261 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:33:32,262 - lightrag - INFO - [_] Process 240690 KV load full_docs with 0 records
+2025-12-29 15:33:32,264 - lightrag - INFO - [_] Process 240690 KV load text_chunks with 0 records
+2025-12-29 15:33:32,265 - lightrag - INFO - [_] Process 240690 KV load full_entities with 0 records
+2025-12-29 15:33:32,266 - lightrag - INFO - [_] Process 240690 KV load full_relations with 0 records
+2025-12-29 15:33:32,270 - lightrag - INFO - [_] Process 240690 KV load llm_response_cache with 1 records
+2025-12-29 15:33:32,272 - lightrag - INFO - [_] Process 240690 doc status load doc_status with 0 records
+2025-12-29 15:33:32,273 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/episodic/graph_chunk_entity_relation.graphml
+2025-12-29 15:33:32,275 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:33:32,277 - lightrag - INFO - [_] Created new empty graph fiel: MemoryKB/Long_Term_Memory/Graph_Construction/MMKG/semantic/graph_chunk_entity_relation.graphml
+2025-12-29 15:33:32,279 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-12-29 15:33:33,890 - lightrag - INFO - Process 240690 building query context...
+2025-12-29 15:33:33,891 - lightrag - INFO - Query nodes: Historical figures, Philosophers, Leaders, top_k: 40, cosine: 0.2
+2025-12-29 15:33:33,892 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-12-29 15:33:35,114 - lightrag - INFO - Query edges: Great Man, Biographical significance, top_k: 40, cosine: 0.2
+2025-12-29 15:33:36,236 - lightrag - INFO - Truncated KG query results: 0 entities, 0 relations
+2025-12-29 15:33:36,237 - lightrag - INFO - Round-robin merged total chunks from 0 to 0
+2025-12-29 15:33:36,238 - lightrag - INFO - Final context: 0 entities, 0 relations, 0 chunks

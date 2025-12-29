@@ -42,7 +42,7 @@ USER_CONV_DIR = ROOT / "MemoryKB" / "User_Conversation"
 CONV_JSON = USER_CONV_DIR / "conversation.json"
 USER_CONV_DIR.mkdir(parents=True, exist_ok=True)
 
-MAIN_BASE_URL = os.getenv("OPENAI_BASE_URL")
+MAIN_BASE_URL = os.getenv("OPENAI_API_BASE")
 MAIN_API_KEY = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=MAIN_API_KEY, base_url=MAIN_BASE_URL)
@@ -222,7 +222,7 @@ async def rag_retrieve(query: str, mode: str = "hybrid"):
     except Exception as e:
         return f"⚠️ RAG retrieval failed: {e}"
 
-async def generate_final_answer(query: str, memory: str):
+def generate_final_answer(query: str, memory: str):
     prompt = f"""
         You are the user's memory assistant.
 
@@ -235,14 +235,14 @@ async def generate_final_answer(query: str, memory: str):
         If memory is insufficient, answer normally.
         """
     try:
-        completion = await client.chat.completions.create(
+        completion = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant with long-term memory."},
                 {"role": "user", "content": prompt}
             ]
         )
-        return completion.choices[0].message["content"]
+        return completion.choices[0].message.content
     except Exception as e:
         return f"⚠️ LLM generation failed: {e}"
 
@@ -277,8 +277,6 @@ async def handle_query(query: str, mode: str, use_pm: bool):
     if not pm_relevant:
         try:
             rag_memory = await rag_retrieve(query, mode=mode)
-            with open("rag_memory.txt", "a", encoding="utf-8") as f:
-                f.write(str(rag_memory))
         except Exception as e:
             return f"⚠️ RAG failed: {e}"
 
@@ -288,7 +286,7 @@ async def handle_query(query: str, mode: str, use_pm: bool):
     if rag_memory:
         memory_text += f"[Long-term Memory]\n{rag_memory}\n"
 
-    final_answer = await generate_final_answer(query, memory_text)
+    final_answer = generate_final_answer(query, memory_text)
 
     return {
         "query": query,
