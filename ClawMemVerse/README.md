@@ -9,9 +9,9 @@ Use MemVerse as the long-term memory backend for [OpenClaw](https://github.com/o
 git clone https://github.com/KnowledgeXLab/MemVerse.git
 cd MemVerse
 
-# 2. Checkout the openmemverse branch
-git checkout -b openmemverse
-git pull origin openmemverse
+# 2. Checkout the main branch
+git checkout -b main
+git pull origin main
 
 # 3. Install and configure
 mkdir -p ~/.openclaw/extensions/memverse
@@ -58,7 +58,7 @@ The plugin reads from local MD files exported from MemVerse Docker container.
 # Clone and checkout
 git clone https://github.com/KnowledgeXLab/MemVerse.git
 cd MemVerse
-git checkout openmemverse
+git checkout main
 
 # Copy files
 mkdir -p ~/.openclaw/extensions/memverse
