@@ -7,8 +7,10 @@
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-0084FF?style=flat-square&logo=python&logoColor=white" />
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-Latest-26A69A?style=flat-square&logo=fastapi&logoColor=white" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-Latest-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img alt="MCP" src="https://img.shields.io/badge/MCP-Supported-7B7DFF?style=flat-square&logo=cloudflare&logoColor=white" />
    <a href="https://github.com/Wings-Of-Disaster/MemVerse/releases">
-    <img alt="Release" src="https://img.shields.io/badge/release-v1.0.0-4A90E2?style=flat-square" />
+    <img alt="Release" src="https://img.shields.io/badge/release-v1.1.0-4A90E2?style=flat-square" />
   </a>
   <a href="https://arxiv.org/abs/2512.03627">
       <img alt="Build" src="http://img.shields.io/badge/cs.AI-arXiv%3A2512.03627-B31B1B.svg">
