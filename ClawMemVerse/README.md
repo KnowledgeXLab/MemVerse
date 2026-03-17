@@ -37,11 +37,11 @@ openclaw gateway
 
 MemVerse provides three memory layers:
 
-| Layer | Description | Access |
-|-------|-------------|--------|
-| **Core Memory** | User profile, preferences, key facts | Fast retrieval |
-| **Semantic Memory** | Knowledge, concepts, meanings | RAG search |
-| **Episodic Memory** | Events, experiences, conversations | Time-based |
+| Layer | Description |
+|-------|-------------|
+| **Core Memory** | User profile, preferences, key facts |
+| **Semantic Memory** | Knowledge, concepts, meanings |
+| **Episodic Memory** | Events, experiences, conversations |
 
 The plugin reads from local MD files exported from MemVerse Docker container.
 
