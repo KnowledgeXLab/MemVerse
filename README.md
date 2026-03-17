@@ -47,8 +47,8 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 <strong>[2026-03-17] 🦞 OpenClaw Support is Live!</strong>
 
 - 🚀 <strong>Instant Integration</strong>: MemVerse now fully supports the <strong>OpenClaw</strong> platform. 
-- 🔗 <strong>URL Deployment</strong>: Simply provide the README URL to OpenClaw for automated deployment: [ClawMemVerse README](https://github.com/KnowledgeXLab/MemVerse/blob/main/ClawMemVerse/README.md)
-- ⚡ <strong>Zero-Config</strong>: Connect your long-term memory system to OpenClaw agents in seconds.
+- 🔗 <strong>URL Deployment</strong>: One-step automated deployment. Simply provide the README URL to OpenClaw for automated deployment: [MemVerse-OpenClaw-Bridge](https://github.com/KnowledgeXLab/MemVerse/blob/main/ClawMemVerse/README.md)
+- 🛠️ <strong>Skill-Based Universality</strong>: Native support for any platform utilizing Skill/Tool architectures, including <strong>Claude Code</strong>, <strong>GitHub Copilot (Codex)</strong>, and more.
 
 </td>
 </tr>
