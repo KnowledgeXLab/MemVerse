@@ -231,6 +231,13 @@ The rest is the same as above.
 ### 📊 Results
 
 <p align="center">
+  <img src="assets/locomo.png" alt="Overview" />
+</p>
+
+
+**locomo:** Our hierarchical memory orchestration significantly boosts performance across different model scales, achieving an F1 score of **60.00%** when applied to GPT-3.5-Turbo-16k and **43.44%** with GPT-4o-mini. By effectively filtering retrieval noise and managing long-horizon cinematic dependencies through tiered caching, our approach ensures that pivotal historical context is precisely accessible, enabling robust reasoning in complex interactive environments without additional fine-tuning.
+
+<p align="center">
   <img src="assets/scienceqa.png" alt="Overview" />
 </p>
 
