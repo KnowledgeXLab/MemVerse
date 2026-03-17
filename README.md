@@ -44,6 +44,20 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 <tr>
 <td width="100%" style="border: none;">
 
+<strong>[2026-03-17] 🦞 OpenClaw Support is Live!</strong>
+
+- 🚀 <strong>Instant Integration</strong>: MemVerse now fully supports the <strong>OpenClaw</strong> platform. 
+- 🔗 <strong>URL Deployment</strong>: Simply provide the README URL to OpenClaw for automated deployment: [ClawMemVerse README](https://github.com/KnowledgeXLab/MemVerse/blob/main/ClawMemVerse/README.md)
+- ⚡ <strong>Zero-Config</strong>: Connect your long-term memory system to OpenClaw agents in seconds.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="100%" style="border: none;">
+
 <strong>[2025-12-19] 🐳 MemVerse Docker v1.1.0 Released!</strong>
 
 - 📦 <strong>Dockerized Deployment</strong>: One-command startup for FastAPI + MCP server  
