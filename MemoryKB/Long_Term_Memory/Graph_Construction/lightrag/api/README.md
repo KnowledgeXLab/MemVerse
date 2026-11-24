@@ -301,9 +301,17 @@ LightRAG API Server implements JWT-based authentication using the HS256 algorith
 ```bash
 # For jwt auth
 AUTH_ACCOUNTS='admin:admin123,user1:pass456'
-TOKEN_SECRET='your-key'
+# Generate a unique key with openssl rand -hex 32, then paste its output here.
+TOKEN_SECRET=
 TOKEN_EXPIRE_HOURS=4
 ```
+
+When `AUTH_ACCOUNTS` is configured, startup requires a `TOKEN_SECRET` of at least
+32 characters and rejects the public default and example values. Keep the same
+secret across restarts and replicas; replacing it invalidates existing JWTs.
+With account authentication disabled and no secret supplied, a random temporary
+guest-token key is generated per process. Configure a shared secret if guest tokens
+must survive restarts or work across multiple processes.
 
 > Currently, only the configuration of an administrator account and password is supported. A comprehensive account system is yet to be developed and implemented.
 
@@ -502,7 +510,8 @@ EMBEDDING_BINDING_HOST=http://localhost:11434
 
 ### For JWT Auth
 # AUTH_ACCOUNTS='admin:admin123,user1:pass456'
-# TOKEN_SECRET=your-key-for-LightRAG-API-Server-xxx
+# Generate a unique value with openssl rand -hex 32.
+# TOKEN_SECRET=
 # TOKEN_EXPIRE_HOURS=48
 
 # LIGHTRAG_API_KEY=your-secure-api-key-here-123

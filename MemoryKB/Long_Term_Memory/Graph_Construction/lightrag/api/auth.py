@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import secrets
 
 import jwt
 from dotenv import load_dotenv
@@ -23,6 +24,19 @@ class TokenPayload(BaseModel):
 class AuthHandler:
     def __init__(self):
         self.secret = global_args.token_secret
+        if not self.secret and not global_args.auth_accounts:
+            self.secret = secrets.token_urlsafe(32)
+        if (
+            not self.secret
+            or len(self.secret.strip()) < 32
+            or self.secret.strip()
+            in ("lightrag-jwt-default-secret", "your-key-for-LightRAG-API-Server-xxx")
+        ):
+            raise ValueError(
+                "Set TOKEN_SECRET to a unique random secret of at least 32 characters "
+                "before enabling AUTH_ACCOUNTS (e.g. openssl rand -hex 32). "
+                "Public default and example secrets are not accepted."
+            )
         self.algorithm = global_args.jwt_algorithm
         self.expire_hours = global_args.token_expire_hours
         self.guest_expire_hours = global_args.guest_token_expire_hours

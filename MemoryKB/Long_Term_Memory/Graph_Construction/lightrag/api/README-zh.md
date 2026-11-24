@@ -299,9 +299,15 @@ LightRAG API 服务器使用基于 HS256 算法的 JWT 认证。要启用安全�
 ```bash
 # JWT 认证
 AUTH_ACCOUNTS='admin:admin123,user1:pass456'
-TOKEN_SECRET='your-key'
+# 使用 openssl rand -hex 32 生成独立密钥，再将输出填入此处。
+TOKEN_SECRET=
 TOKEN_EXPIRE_HOURS=4
 ```
+
+配置 `AUTH_ACCOUNTS` 后，启动时必须提供至少 32 字符的 `TOKEN_SECRET`，且不能使用
+公开默认值或示例值。重启及多实例部署应使用同一密钥；更换密钥会使已签发的 JWT 失效。
+未启用账户认证且未配置密钥时，每个进程会生成临时随机访客令牌密钥。若访客令牌需要
+在重启后或多个进程之间继续使用，请显式配置共享密钥。
 
 > 目前仅支持配置一个管理员账户和密码。尚未开发和实现完整的账户系统。
 
@@ -494,7 +500,8 @@ EMBEDDING_BINDING_HOST=http://localhost:11434
 
 ### For JWT Auth
 # AUTH_ACCOUNTS='admin:admin123,user1:pass456'
-# TOKEN_SECRET=your-key-for-LightRAG-API-Server-xxx
+# 使用 openssl rand -hex 32 生成独立密钥。
+# TOKEN_SECRET=
 # TOKEN_EXPIRE_HOURS=48
 
 # LIGHTRAG_API_KEY=your-secure-api-key-here-123
