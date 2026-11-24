@@ -40,7 +40,15 @@ On benchmark evaluations, agents equipped with MemVerse achieve an accuracy of *
 
 ## 📢 Latest Updates
 
-**[2026-11-24] 🎉 MemVerse has been accepted to Findings of EACL 2027!**
+<table>
+<tr>
+<td width="100%" style="border: none;">
+
+<strong>[2026-11-24] 🎉 MemVerse has been accepted to Findings of EACL 2027!</strong>
+
+</td>
+</tr>
+</table>
 
 <table>
 <tr>
