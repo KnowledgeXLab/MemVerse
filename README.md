@@ -30,7 +30,7 @@
 
 > 📄 **Paper Available on arXiv** — [https://arxiv.org/abs/2512.03627](https://arxiv.org/abs/2512.03627)
 
-On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accuracy of **84.48% on ScienceQA** and **90.40% on MSR-VTT**, demonstrating enhanced multimodal reasoning, adaptive learning, and coherent performance across extended interactions.
+On benchmark evaluations, agents equipped with MemVerse achieve an accuracy of **85.48% on ScienceQA** and **90.40% R@1 on MSR-VTT**, demonstrating enhanced multimodal reasoning, adaptive learning, and coherent performance across extended interactions.
 
 <p align="center">
   <img src="assets/novelty.jpg" alt="Overview" />
@@ -39,6 +39,8 @@ On benchmark evaluations, agents equipped with MemVerse achieve a reasoning accu
 ---
 
 ## 📢 Latest Updates
+
+**[2026-11-24] 🎉 MemVerse has been accepted to Findings of EACL 2027!**
 
 <table>
 <tr>
@@ -255,7 +257,7 @@ The rest is the same as above.
 </p>
 
 
-**ScienceQA:** MemVerse-enhanced GPT-4o-mini achieves an accuracy of **84.48%**, showing that parametric memory enables fast, context-aware reasoning even when questions have limited sequential dependencies. The model effectively integrates long-term knowledge for subject-specific reasoning in natural science, social science, and language tasks.
+**ScienceQA:** MemVerse-enhanced GPT-4o-mini achieves an accuracy of **85.48%**, showing that parametric memory enables fast, context-aware reasoning even when questions have limited sequential dependencies. The model effectively integrates long-term knowledge for subject-specific reasoning in natural science, social science, and language tasks.
 
 <p align="center">
   <img src="assets/msrvtt.png" alt="Overview" />
